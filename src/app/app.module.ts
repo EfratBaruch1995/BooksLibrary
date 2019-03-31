@@ -13,7 +13,7 @@ import { LibraryComponent } from './library/library.component';
 const appRoutes: Routes = [
   { path: 'home', component: HomePageComponent },
   { path: 'library',      component: LibraryComponent },
-  { path: 'editBook/:book',      component: BookEditComponent }
+  { path: 'editBook',      component: BookEditComponent }
 
 ];
 
