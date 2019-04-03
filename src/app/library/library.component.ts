@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Book } from '../Book';
-import { BookServiceService } from '../book-service.service';
+import {  BookServiceService } from '../shared-services/book-service.service';
+
 
 @Component({
   selector: 'app-library',
@@ -15,7 +16,7 @@ export class LibraryComponent implements OnInit {
   ngOnInit()
   {}
 
-constructor(private srv : BookServiceService){
+constructor(private srv : BookServiceService) {
   this.books= srv.getBooks();
 }
 
